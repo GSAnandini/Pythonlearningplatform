@@ -1,0 +1,166 @@
+<?php require('connection.php');?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type="text/css" href="python.css">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+<style>
+h1{
+  border: 1px blue; 
+  padding: 35px;
+  background-color:blue;
+  color:white;
+  font-size: 35px;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User - Login and Register</title>
+  <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+  
+  <header>
+    <h2>Learn Python with Anandini</h2>
+    <div class='sign-in-up'>
+      <button type='button' onclick="popup('login-popup')">LOGIN</button>
+      <button type='button' onclick="popup('register-popup')">REGISTER</button>
+    </div>
+  </header>
+
+  <div class="popup-container" id="login-popup">
+    <div class="popup">
+      <form method="POST" action="login_register.php">
+        <h2>
+          <span>USER LOGIN</span>
+          <button type="reset" onclick="popup('login-popup')">X</button>
+        </h2>
+        <input type="text" placeholder="E-mail or Username" name="email_username">
+        <input type="password" placeholder="Password" name="password">
+        <button onclick="location.href='index.html'">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup-container" id="register-popup">
+    <div class="register popup">
+      <form method="POST" action="login_register.php">
+        <h2>
+          <span>USER REGISTER</span>
+          <button type="reset" onclick="popup('register-popup')">X</button>
+        </h2>
+        <input type="text" placeholder="Full Name" name="fullname">
+        <input type="text" placeholder="Username" name="username">
+        <input type="email" placeholder="E-mail" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <button onclick="location.href='python.html'">REGISTER</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function popup(popup_name)
+    {
+      get_popup=document.getElementById(popup_name);
+      if(get_popup.style.display=="flex")
+      {
+        get_popup.style.display="none";
+      }
+      else
+      {
+        get_popup.style.display="flex";
+      }
+    }
+  </script>
+<center>
+<h1>Welcome to Python Tutorial</h1>
+</center>
+<br>
+<br>
+<ul id="myUL">
+  <li><span class="caret"><bold>Chapter-1</bold></span>
+      <li><button onclick="location.href='GSAnandini-python-assesment/f1.html'">Introduction</button></li><br>
+      <li><button onclick="location.href='GSAnandini-python-assesment/f0.html'">Print statement</button></li><br>
+      <li><button onclick="location.href='GSAnandini-python-assesment/q1.html'">Quiz-1</button></li><br>
+<ul>
+      <li><bold><span class="caret"><bold>Chapter-2</bold></span>
+          <li><button onclick="location.href='GSAnandini-python-assesment/f2.html'">About Variables</button></li><br>
+          <li><button onclick="location.href='GSAnandini-python-assesment/f3.html'">About Datatypes</button></li><br>
+          <li><button onclick="location.href='GSAnandini-python-assesment/f3a.html'">Operators</button></li><br>
+          <li><button onclick="location.href='GSAnandini-python-assesment/q2.html'">Quiz-2</button></li><br>
+<ul>
+          <li><span class="caret"><bold>Chapter-3</bold></span>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f4.html'">Strings</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f5.html'">String Slicing</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f6.html'">String Functions</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f7.html'">Escape sequence characters</button></li><br>   
+              <li><button onclick="location.href='GSAnandini-python-assesment/q3.html'">Quiz-3</button></li><br>
+              <li><span class="caret"><bold>Chapter-4</bold></span>
+             <ul>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f8.html'">Lists</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f9.html'">Tuples</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f10.html'">Sets</button></li><br>
+              <li><button onclick="location.href='GSAnandini-python-assesment/f11.html'">Dictionaries</button></li><br>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+           
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+</body>
+</html>

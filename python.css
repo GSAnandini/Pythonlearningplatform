@@ -1,0 +1,17 @@
+body{
+	background-color: white;
+}
+.caret{
+	color: white;
+	font-size: 40px;
+}
+li{
+	color: lightpink;
+	font-size: 20px;
+}
+button{
+	background_color: darkyellow;
+	color: black;
+	font-size: 25px;
+	padding: 5px;
+   }
