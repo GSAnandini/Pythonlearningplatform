@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px blue; 
+  padding: 35px;
+  background-color:blue;
+  color:white;
+  font-size: 35px;
+}
+</style>
+</head>
+<body>
+<center>
+<p class="ex1">Sets</p>
+</center>
+<h2>Sets</h2>
+<p>Sets are used to store multiple items in a single variable.
+
+<p>Set is one of 4 built-in data types in Python used to store collections of data
+<p>A set is a collection which is unordered, unchangeable*, and unindexed.
+<p>Sets are written with curly brackets.
+
+<h3>Example</h3>
+<p>Create a Set:
+
+<p>thisset = {"apple", "banana", "cherry"}
+<p>print(thisset)
+<h3>Output:</h3>
+<p>{'apple', 'cherry', 'banana'}
+<p>Set items are unordered, unchangeable, and do not allow duplicate values.
+<h3>Access Items</h3>
+<p>You cannot access items in a set by referring to an index or a key.
+
+<p>But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword.
+
+<h3>Example</h3>
+<p>Loop through the set, and print the values:
+
+<p>thisset = {"apple", "banana", "cherry"}
+
+<p>for x in thisset:
+<p><t>  print(x)
+<h3>Output:</h3>
+<p>cherry
+<p>banana
+<p>apple
+<h3>Add Items</h3>
+<p>Once a set is created, you cannot change its items, but you can add new items.
+
+<p>To add one item to a set use the add() method.
+
+<h3>Example</h3>
+<p>Add an item to a set, using the add() method:
+
+<p>thisset = {"apple", "banana", "cherry"}
+
+<p>thisset.add("orange")
+
+<p>print(thisset)
+<h3>Output:</h3>
+<p>{'banana', 'cherry', 'apple', 'orange'}
+<h3>Remove Item</h3>
+<p>To remove an item in a set, use the remove(), or the discard() method.
+
+<h3>Example</h3>
+<p>Remove "banana" by using the remove() method:
+
+<p>thisset = {"apple", "banana", "cherry"}
+
+<p>thisset.remove("banana")
+
+<p>print(thisset)
+<h3>Output:</h3>
+<p>{'cherry', 'apple'}
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px blue; 
+  padding: 35px;
+  background-color:blue;
+  color:white;
+  font-size: 35px;
+}
+</style>
+</head>
+<body>
+<center>
+<p class="ex1">String Slicing</p>
+</center>
+<h2>String Slicing</h2>
+<p>Firstly you should know about INDEXING in strings</p>
+<br>
+<center>
+<h2> 0   1  2  3  4  5 </h2>
+<h2> P   Y  T  H  O  N </h2>
+<h2> -6 -5 -4 -3 -2 -1 </h2>
+</center>
+<br>
+<p> Consider the string</p>
+<h4> a='python' </h4>
+<p> Now, </p>
+<h3> Accessing the string elements we do as follows: </h3>
+<p> a[0]=P </p> 
+<p> a[1]=Y </p> 
+<p> a[2]=T </p> 
+<p> a[3]=H </p> 
+<p> a[4]=O </p> 
+<p> a[5]=N </p> 
+<h3> Accessing in reverse order: </h3>
+<p> a[-1]=P </p> 
+<p> a[-2]=Y </p> 
+<p> a[-3]=T </p> 
+<p> a[-4]=H </p> 
+<p> a[-5]=O </p> 
+<p> a[-6]=N </p> 
+<h2> Slicing </h2>
+<p> Note that since -0 is the same as 0, negative indices start from -1.
+In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters,
+slicing allows you to obtain substring:</p>
+<h4>print( a[0:2] ) # characters from position 0 (included) to 2 (excluded)</h4>
+<p>'Py'</p>
+<h4>print( a[2:5] ) # characters from position 2 (included) to 5 (excluded)</h4>
+<p>'tho'</p>
+<p>Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:]
+is always equal to s:</p>
+<h4>print( a[:2] + a[2:] )</h4>
+<p>'Python'</p>
+<h4>print( a[:4] + a[4:] )</h4>
+<p>'Python'</p>
+<p> Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults
+to the size of the string being sliced. </p>
+<h4> print( [:2] ) # character from the beginning to position 2 (excluded)</h4>
+<p>'Py'</p>
+<h4>print( a[4:] ) # characters from position 4 (included) to the end</h4>
+<p>'on'</p>
+<h4>print(a [-2:] ) # characters from the second-last (included) to the end</h4>
+<p>'on'</p>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px blue; 
+  padding: 35px;
+  background-color:blue;
+  color:white;
+  font-size: 35px;
+}
+</style>
+</head>
+<body>
+<center>
+<p class="ex1">Dictionaries</p>
+</center>
+<h2>Dictionaries</h2>
+<p>Dictionaries are used to store data values in key:value pairs.
+
+<p>A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+
+<p>As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+
+<p>Dictionaries are written with curly brackets, and have keys and values:
+
+<h3>Example</h3>
+<p>Create and print a dictionary:
+
+<p>thisdict = {
+ <p> "brand": "Ford",
+  <p>"model": "Mustang",
+ <p> "year": 1964
+<p>}
+<p>print(thisdict)
+<h3>Output:</h3>
+<p>{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+<p>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+
+<p>Duplicates Not Allowed
+<h3>Accessing Items</h3>
+<p>You can access the items of a dictionary by referring to its key name, inside square brackets:
+
+<h3>Example</h3>
+<p>Get the value of the "model" key:
+
+<p>thisdict = {
+  <p>"brand": "Ford",
+  <p>"model": "Mustang",
+  <p>"year": 1964
+<p>}
+<p>x = thisdict["model"]
+<h3>Output:</h3>
+<p>Mustang
+<p>Change Values
+<p>You can change the value of a specific item by referring to its key name:
+
+<h3>Example</h3>
+<p>Change the "year" to 2018:
+
+<p>thisdict = {
+ <p> "brand": "Ford",
+  <p>"model": "Mustang",
+  <p>"year": 1964
+<p>}
+<p>thisdict["year"] = 2018
+<h3>Output:</h3>
+<p>Change Values
+<p>You can change the value of a specific item by referring to its key name:
+
+<h3>Example</h3>
+<p>Change the "year" to 2018:
+
+<p>thisdict = {
+  <p>"brand": "Ford",
+  <p>"model": "Mustang",
+  <p>"year": 1964
+<p>}
+<p>thisdict["year"] = 2018
+<h3>Output:</h3>
+<p>{'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
+<h3>Adding Items</h3>
+<p>Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+
+<h3>Example</h3>
+<p>thisdict = {
+  <p>"brand": "Ford",
+  <p>"model": "Mustang",
+  <p>"year": 1964
+<p>}
+<p>thisdict["color"] = "red"
+<p>print(thisdict)
+<h3>Output:</h3>
+<p>{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+<h3>Removing Items</h3>
+<p>There are several methods to remove items from a dictionary:
+
+<h3>Example</h3>
+<p>The pop() method removes the item with the specified key name:
+
+<p>thisdict = {
+  <p>"brand": "Ford",
+  <p>"model": "Mustang",
+  <p>"year": 1964
+<p>}
+<p>thisdict.pop("model")
+<p>print(thisdict)
+<h3>Output:</h3>
+<p>{'brand': 'Ford', 'year': 1964}
+</body>
+</html>

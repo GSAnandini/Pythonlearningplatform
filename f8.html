@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.ex1 {
+  border: 1px blue; 
+  padding: 35px;
+  background-color:blue;
+  color:white;
+  font-size: 35px;
+}
+</style>
+</head>
+<body>
+<center>
+<p class="ex1">Lists</p>
+</center>
+<h2>Lists</h2>
+<p>Lists are used to store multiple items in a single variable.
+<p>Lists are one of 4 built-in data types in Python used to store collections of data.
+<p>Lists are created using square brackets:
+<p>List items are ordered, changeable, and allow duplicate values.
+<p>List items are indexed, the first item has index [0], the second item has index [1] etc.
+<h3>Ordered</h3>
+<p>When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+<p>If you add new items to a list, the new items will be placed at the end of the list.
+<h3>Changeable</h3>
+<p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+<h3>Allow Duplicates</h3>
+<p>Since lists are indexed, lists can have items with the same value:
+<h3>Example</h3>
+<p>Create a List:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>print(thislist)
+<h3>Output:</h3>
+<p>['apple', 'banana', 'cherry']
+<h3>List Length</h3>
+<p>To determine how many items a list has, use the len() function:
+<h3>Example</h3>
+<p>Print the number of items in the list:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>print(len(thislist))
+<h3>Output:</h3>
+<p>3
+<h3>Access Items</h3>
+<p>List items are indexed and you can access them by referring to the index number:
+<h3>Example</h3>
+<p>Print the second item of the list:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>print(thislist[1])
+<h3>Output:</h3>
+<p>banana
+<p>Note: The first item has index 0.
+<h3>Negative Indexing</h3>
+<p>Negative indexing means start from the end
+<p>-1 refers to the last item, -2 refers to the second last item etc.
+<h3>Example</h3>
+<p>Print the last item of the list:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>print(thislist[-1])
+<h3>Output:</h3>
+<p>cherry
+<h3>Change Item Value</h3>
+<p>To change the value of a specific item, refer to the index number:
+<h3>Example</h3>
+<p>Change the second item:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>thislist[1] = "blackcurrant"
+<p>print(thislist)
+<h3>Output:</h3>
+<p>['apple', 'blackcurrant', 'cherry']
+<h3>Append Items</h3>
+<p>To add an item to the end of the list, use the append() method:
+<h3>Example</h3>
+<p>Using the append() method to append an item:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>thislist.append("orange")
+<p>print(thislist)
+<h3>Output:</h3>
+<p>['apple', 'banana', 'cherry', 'orange']
+<h3>Insert Items</h3>
+<p>To insert a list item at a specified index, use the insert() method.
+<p>The insert() method inserts an item at the specified index:
+<h3>Example</h3>
+<p>Insert an item as the second position:
+<p>thislist = ["apple", "banana", "cherry"]
+<p>thislist.insert(1, "orange")
+<p>print(thislist)
+<h3>Output:</h3>
+<p>['apple', 'orange', 'banana', 'cherry']
+<p>Remove Specified Item
+<p>The remove() method removes the specified item.
+<h3>Example</h3>
+<p>Remove "banana":
+<p>thislist = ["apple", "banana", "cherry"]
+<p>thislist.remove("banana")
+<p>print(thislist)
+<h3>Output:</h3>
+<p>['apple', 'cherry']
+<h3>Sort List</h3>
+<p>List objects have a sort() method that will sort the list 
+<h3>Example</h3>
+<p>Sort the list numerically:
+<p>thislist = [100, 50, 65, 82, 23]
+<p>thislist.sort()
+<p>print(thislist)
+<h3>Output:</h3>
+<p>[23, 50, 65, 82, 100]
+</body>
+</html>
